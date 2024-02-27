@@ -1,0 +1,95 @@
+#landingWrapper {
+
+    width: 100%;
+    height: 150vh;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 90vh 40vh 10vh;
+    grid-template-areas:
+    'hd'
+    'lm'
+    'ls'
+    'ft';
+}
+
+body{
+    margin:0
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font: bold;
+    font-size: 2rem;
+}
+
+footer {
+    grid-area: ft;
+    background-color: gray;
+    
+}
+
+header{
+    grid-area: hd;
+    background-color: aqua;
+    left:0;
+    right:0;
+    position: fixed;
+
+}
+
+.menu {
+    height: 50vh;
+    width: 100%;
+    top: -50vh;
+    background-color: royalblue;
+    transition: top 0.5s ;
+    position: fixed;
+}
+
+.menu-button{
+    cursor: pointer;
+}
+
+.menu-button i.material-icons{
+    font-size: 4rem;
+}
+
+.show {
+    top:0vh;
+}
+.fade-layer{
+    position: fixed;
+    top: 50vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+#landingMain {
+    grid-area: lm;
+    background-color: lightgreen;
+}
+
+.landingSection {
+    grid-area: ls;
+    background-color: yellow;
+}
+
+
+
+
+/* Desktop */
+@media screen and (min-width:768px) {
+    .menu-button {
+        display: none;
+    }
+
+}
