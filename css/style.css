@@ -13,6 +13,20 @@
     'ft';
 }
 
+#aboutWrapper {
+
+    width: 100%;
+    height: 140vh;
+
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10vh 120vh 10vh;
+    grid-template-areas:
+    'hd hd'
+    'am aa'
+    'ft ft';
+}
+
 body{
     margin:0
 }
@@ -21,7 +35,7 @@ a {
     text-decoration: none;
     color: white;
     font: bold;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 footer {
@@ -32,14 +46,23 @@ footer {
 
 header{
     grid-area: hd;
-    background-color: aqua;
+    background-color: darkslategrey;
     left:0;
     right:0;
     position: fixed;
-
+    display: flex;
+    justify-content: space-between;
 }
 
-.menu {
+.logo {
+    width: 10%;
+    height: 10vh;
+    background-image: url(../img/Placeholder.jpg) ;
+    background-size:cover;
+    border-radius: 50%;
+}
+
+.mobileNav {
     height: 50vh;
     width: 100%;
     top: -50vh;
@@ -83,13 +106,65 @@ header{
     background-color: yellow;
 }
 
+.desktopNav {
+    grid-area: dn;
+    background-color: darkslategrey;
+    position: fixed;
+    left: 85%;
+    right: 0;
+    top: 10vh;
+    bottom: 0vh;
+    display: none;
+}
+
+#aboutMain {
+    grid-area: am;
+    background-color: yellow;
+}
+
+#aboutAside {
+    grid-area: aa;
+    background-color: green;
+}
+
 
 
 
 /* Desktop */
 @media screen and (min-width:768px) {
+    
+    #landingWrapper {
+
+        grid-template-columns: 85% 15%;
+        grid-template-areas:
+        'hd hd'
+        'lm dn'
+        'ls dn'
+        'ft ft';
+
+    }
+
+    #aboutWrapper {
+        height: 170vh;
+
+        grid-template-columns: 85% 15%;
+        grid-template-rows:10vh 150vh 10vh ;
+        grid-template-areas:
+        'hd hd'
+        'am dn'
+        'ft ft';
+
+    }
+    
+    
+    
+    
+    
     .menu-button {
         display: none;
+    }
+    .desktopNav {
+        display: initial;
     }
 
 }
