@@ -27,6 +27,19 @@
     'ft ft';
 }
 
+#educationWrapper {
+    width: 100%;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10vh 140vh 40vh 10vh;
+    grid-template-areas:
+    'hd hd'
+    'em em'
+    'es ea'
+    'ft ft';
+}
+
 body{
     margin:0
 }
@@ -104,28 +117,73 @@ header{
 .landingSection {
     grid-area: ls;
     background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.desktopNav {
-    grid-area: dn;
-    background-color: darkslategrey;
-    position: fixed;
-    left: 85%;
-    right: 0;
-    top: 10vh;
-    bottom: 0vh;
-    display: none;
+.landingArticle{
+    height: 30vh;
+    width: 90%;
+    background-color: white;
 }
 
 #aboutMain {
     grid-area: am;
     background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#aboutIMG {
+    height: 40vh;
+    width: 90%;
+    background-color: white;
+}
+
+#aboutMe {
+    height: 40vh;
+    width: 90%;
+    background-color: white;
 }
 
 #aboutAside {
     grid-area: aa;
     background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#mobileContact {
+    height: 110vh;
+    width: 80%;
+    background-color: white;
+}
+
+#educationMain {
+    grid-area: em;
+    background-color: yellow;
+}
+
+#educationSection {
+    grid-area: es;
+    background-color: green;
+}
+
+#educationAside {
+    grid-area: ea;
+    background-color: red;
+}
+
+.educationIMG {
+    height: 30vh;
+    width: 25vw;
+    background-color: white;
+}
+
 
 
 
@@ -155,6 +213,18 @@ header{
         'ft ft';
 
     }
+    #educationWrapper {
+        height: 180vh;
+
+        grid-template-columns: 85% 15%;
+        grid-template-rows:10vh 80vh 40vh 40vh 10vh ;
+        grid-template-areas:
+        'hd hd'
+        'em dn'
+        'es dn'
+        'des dn'
+        'ft ft'
+    }
     
     
     
@@ -164,7 +234,22 @@ header{
         display: none;
     }
     .desktopNav {
-        display: initial;
+        grid-area: dn;
+        background-color: darkslategrey;
+        position: fixed;
+        left: 85%;
+        right: 0;
+        top: 10vh;
+        bottom: 0vh;
+    }
+    #desktopContact{
+        height: 50vh;
+        width: 90%;
+        background-color: white;
+    }
+    #desktopEducationSection{
+        grid-area: des;
+        background-color: red;
     }
 
 }
