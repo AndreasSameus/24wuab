@@ -166,24 +166,45 @@ header{
 #educationMain {
     grid-area: em;
     background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #educationSection {
     grid-area: es;
     background-color: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #educationAside {
     grid-area: ea;
     background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .educationIMG {
     height: 30vh;
-    width: 25vw;
+    width: 90%;
     background-color: white;
 }
 
+.educationArticle {
+    height: 60vh;
+    width: 80%;
+    background-color: white;
+}
+
+#educationArticle2{
+    height: 30vh;
+    width: 90%;
+    background-color: white;
+}
 
 
 
@@ -250,6 +271,29 @@ header{
     #desktopEducationSection{
         grid-area: des;
         background-color: red;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .educationIMG2 {
+        width: 30%;
+        height: 30vh;
+        background-color: white;
+    }
+    #extraEducationIMG {
+        width: 53%;
+        height: 30vh;
+        background-color: white;
+    }
+    .educationArticle {
+        height: 60vh;
+        width: 40%;
+        background-color: white;
+    }
+    #educationMain {
+        flex-direction: row;
+        justify-content: space-around ;
+        align-items: center;
     }
 
 }
