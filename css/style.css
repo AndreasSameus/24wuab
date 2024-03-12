@@ -40,6 +40,18 @@
     'ft ft';
 }
 
+#projectsWrapper {
+    width: 100%;
+    height: 220vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 200vh 10vh;
+    grid-template-areas:
+    'hd hd'
+    'pm pm'
+    'ft ft';
+}
+
 body{
     margin:0
 }
@@ -59,12 +71,13 @@ footer {
 
 header{
     grid-area: hd;
-    background-color: darkslategrey;
+    background-color: #333333;
     left:0;
     right:0;
     position: fixed;
     display: flex;
     justify-content: space-between;
+    box-shadow:0px 0.2vh;
 }
 
 .logo {
@@ -111,12 +124,15 @@ header{
 
 #landingMain {
     grid-area: lm;
-    background-color: lightgreen;
+    background-color: #444444;
+    background-image: url(../img/Placeholder.jpg);
+    background-size: cover;
+
 }
 
 .landingSection {
     grid-area: ls;
-    background-color: yellow;
+    background-color: #444444;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +146,7 @@ header{
 
 #aboutMain {
     grid-area: am;
-    background-color: yellow;
+    background-color: #444444;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -151,21 +167,21 @@ header{
 
 #aboutAside {
     grid-area: aa;
-    background-color: green;
+    background-color: #444444;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #mobileContact {
-    height: 110vh;
+    height: 107vh;
     width: 80%;
     background-color: white;
 }
 
 #educationMain {
     grid-area: em;
-    background-color: yellow;
+    background-color: #444444;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,7 +190,7 @@ header{
 
 #educationSection {
     grid-area: es;
-    background-color: green;
+    background-color: #444444;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -182,7 +198,7 @@ header{
 
 #educationAside {
     grid-area: ea;
-    background-color: red;
+    background-color: #444444;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -206,7 +222,49 @@ header{
     background-color: white;
 }
 
+#projectsMain {
+    grid-area: pm;
+    background-color: #444444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.projectsArticle{
+    height: 60vh;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+    
+}
+
+#projectsIMG1{
+    height: 40vh;
+    width: 40%;
+    background-color: wheat;
+    margin-right: 5vh;
+    background-image: url(../img/placeholder2.jpg);
+}
+
+#projectsIMG2{
+    height: 40vh;
+    width: 40%;
+    background-color: wheat;
+    margin-right: 5vh;
+    background-image: url(../img/placeholder2.jpg);
+}
+
+#projectsIMG3{
+    height: 40vh;
+    width: 40%;
+    background-color: wheat;
+    margin-right: 5vh;
+    background-image: url(../img/placeholder2.jpg);
+}
 
 
 /* Desktop */
@@ -246,21 +304,28 @@ header{
         'des dn'
         'ft ft'
     }
-    
-    
-    
-    
+
+    #projectsWrapper {
+        height: 170vh;
+        display: grid;
+        grid-template-columns: 85% 15%;
+        grid-template-rows: 10vh 150vh 10vh;
+        grid-template-areas:
+        'hd hd'
+        'pm dn'
+        'ft ft';
+    }
     
     .menu-button {
         display: none;
     }
     .desktopNav {
         grid-area: dn;
-        background-color: darkslategrey;
+        background-color: #222222;
         position: fixed;
         left: 85%;
         right: 0;
-        top: 10vh;
+        top: 0;
         bottom: 0vh;
     }
     #desktopContact{
@@ -270,7 +335,7 @@ header{
     }
     #desktopEducationSection{
         grid-area: des;
-        background-color: red;
+        background-color: #444444;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -294,6 +359,16 @@ header{
         flex-direction: row;
         justify-content: space-around ;
         align-items: center;
+    }
+    #projectsMain {
+        flex-direction: row;
+        flex-wrap: wrap ;
+        justify-content: space-around;
+
+    }
+
+    .projectsArticle{
+        width: 35%;
     }
 
 }
