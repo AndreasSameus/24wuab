@@ -248,6 +248,7 @@ header{
     background-color: wheat;
     margin-right: 5vh;
     background-image: url(../img/placeholder2.jpg);
+    background-size: cover;
 }
 
 #projectsIMG2{
@@ -256,6 +257,7 @@ header{
     background-color: wheat;
     margin-right: 5vh;
     background-image: url(../img/placeholder2.jpg);
+    background-size: cover;
 }
 
 #projectsIMG3{
@@ -264,6 +266,7 @@ header{
     background-color: wheat;
     margin-right: 5vh;
     background-image: url(../img/placeholder2.jpg);
+    background-size: cover;
 }
 
 
