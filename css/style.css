@@ -64,7 +64,7 @@ body{
     margin:0
 }
 
-a {
+nav a {
     text-decoration: none;
     color: white;
     font: bold;
@@ -100,7 +100,7 @@ header{
     height: 50vh;
     width: 100%;
     top: -50vh;
-    background-color: royalblue;
+    background-color: #222222;
     transition: top 0.5s ;
     position: fixed;
 }
@@ -149,16 +149,13 @@ header{
 .landingArticle{
     height: 30vh;
     width: 90%;
-    background-color: #444444;
+    background-color: white;
     padding-left: 5%;
     padding-right: 5%;
     font-size: 1.1rem;
-    color: white;
+    box-sizing: border-box;
 }
 
-#me {
-    color: gold;
-}
 #aboutMain {
     grid-area: am;
     background-color: #444444;
@@ -227,8 +224,10 @@ header{
 
 .educationIMG {
     height: 30vh;
-    width: 90%;
+    width: 95%;
     background-color: white;
+    background-image: url(../img/EducationIMG.jpg);
+    background-size: cover;
 }
 
 .educationArticle {
@@ -265,36 +264,37 @@ header{
     width: 80%;
     background-color: white;
     display: flex;
-    justify-content: right;
-    align-items: center;
+    flex-direction: column;
+
     
     
 }
 
 #projectsIMG1{
-    height: 40vh;
-    width: 40%;
-    background-color: wheat;
-    margin-right: 5vh;
-    background-image: url(../img/placeholder2.jpg);
-    background-size: cover;
+    height: 25vh;
+    width: 100%;
+    background-image: url(../img/MySolitaireLowSize.jpg);
+    background-size:cover;
+}
+.projectssArticle{
+    height: 35vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #projectsIMG2{
-    height: 40vh;
-    width: 40%;
-    background-color: wheat;
-    margin-right: 5vh;
-    background-image: url(../img/placeholder2.jpg);
-    background-size: cover;
+    height: 25vh;
+    width: 100%;
+    background-image: url(../img/MyCookingWebsiteLowSize27.jpg);
+    background-size:cover;
 }
 
 #projectsIMG3{
-    height: 40vh;
-    width: 40%;
-    background-color: wheat;
-    margin-right: 5vh;
-    background-image: url(../img/placeholder2.jpg);
+    height: 25vh;
+    width: 100%;
+    background-image: url(../img/Button.jpg);
     background-size: cover;
 }
 
@@ -380,12 +380,14 @@ header{
     .educationIMG2 {
         width: 30%;
         height: 30vh;
-        background-color: white;
+        background-image: url(../img/School.jpg);
+        background-size: cover;
     }
     #extraEducationIMG {
         width: 53%;
         height: 30vh;
-        background-color: white;
+        background-image: url(../img/NTI.jpg);
+        background-size: cover;
     }
     .educationArticle {
         height: 60vh;
@@ -427,5 +429,20 @@ header{
 
     #educationArticle2 {
         font-size: 1.2rem;
+    }
+
+    .projectssArticle{
+        height: 25vh;
+        line-height: 0.9;
+    }
+
+    #projectsIMG1{
+        height: 35vh;
+    }
+    #projectsIMG2{
+        height: 35vh;
+    }
+    #projectsIMG3{
+        height: 35vh;
     }
 }
